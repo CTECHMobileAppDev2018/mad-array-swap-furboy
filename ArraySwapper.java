@@ -4,10 +4,14 @@ class ArraySwapper {
   
   // This method assumes you only have 2 items in your array
   public void arraySwap(int []inputArray) {
-    
     // Swap the two items in "inputArray" and return the output
     // put your code here
-    int temp;
+    int temp = 0;
+    int temp2 = 0;
+    inputArray[0] = temp2;
+    inputArray[1] = temp;
+    inputArray[1] = temp2;
+    inputArray[0] = temp;
         
   }
   
@@ -16,8 +20,12 @@ class ArraySwapper {
     
     // Swap the two items in "inputArray" and return the output
     // Remember to make sure that loc1 and loc2 are valid positions in the array!
-    int temp;
-        
+    int temp = 0;
+    int temp2 = 0;
+    inputArray[loc1] = temp;
+    inputArray[loc2] = temp2;
+    inputArray[loc2] = temp;
+    inputArray[loc2] = temp2;
   }
 
   
