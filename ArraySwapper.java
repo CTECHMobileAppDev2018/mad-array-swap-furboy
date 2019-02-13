@@ -22,13 +22,18 @@ class ArraySwapper {
     // Remember to make sure that loc1 and loc2 are valid positions in the array!
     int temp = 0;
     int temp2 = 0;
-    inputArray[loc1] = temp;
-    inputArray[loc2] = temp2;
-    inputArray[loc2] = temp;
-    inputArray[loc2] = temp2;
+    if(loc1 < 0 | loc1 >= inputArray.length){
+      if(loc2 < 0 | loc2 >= inputArray.length){
+      inputArray[loc1] = temp;
+      inputArray[loc2] = temp2;
+      inputArray[loc2] = temp;
+      inputArray[loc2] = temp2;
   }
-
-  
+    }
+    else{
+      System.out.println("Error");
+  }
+  }
   
   public static void main(String[] args) {
 
